@@ -1,6 +1,8 @@
 # aws-lambda-with-cloudwatch-trigger-tf-module #
 
 [![GitHub Build Status](https://github.com/cisagov/aws-lambda-with-cloudwatch-trigger-tf-module/workflows/build/badge.svg)](https://github.com/cisagov/aws-lambda-with-cloudwatch-trigger-tf-module/actions)
+[![License](https://img.shields.io/github/license/cisagov/aws-lambda-with-cloudwatch-trigger-tf-module)](https://spdx.org/licenses/)
+[![CodeQL](https://github.com/cisagov/aws-lambda-with-cloudwatch-trigger-tf-module/workflows/CodeQL/badge.svg)](https://github.com/cisagov/aws-lambda-with-cloudwatch-trigger-tf-module/actions/workflows/codeql-analysis.yml)
 
 This is a generic skeleton project that can be used to quickly get a
 new [cisagov](https://github.com/cisagov) [Terraform
@@ -11,8 +13,9 @@ hooks](https://pre-commit.com) and
 [GitHub Actions](https://github.com/features/actions) configurations
 appropriate for the major languages that we use.
 
-See [here](https://www.terraform.io/docs/modules/index.html) for more
-details on Terraform modules and the standard module structure.
+See the [Terraform
+documentation](https://www.terraform.io/docs/modules/index.html) for
+more details on Terraform modules and the standard module structure.
 
 ## Usage ##
 
@@ -34,14 +37,14 @@ module "example" {
 ## Requirements ##
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | terraform | >= 1.1 |
 | aws | >= 4.9 |
 
 ## Providers ##
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | aws | >= 4.9 |
 
 ## Modules ##
@@ -51,7 +54,7 @@ No modules.
 ## Resources ##
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_instance.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource |
 | [aws_ami.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami) | data source |
 | [aws_default_tags.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/default_tags) | data source |
@@ -59,7 +62,7 @@ No modules.
 ## Inputs ##
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | ami\_owner\_account\_id | The ID of the AWS account that owns the Example AMI, or "self" if the AMI is owned by the same account as the provisioner. | `string` | `"self"` | no |
 | aws\_availability\_zone | The AWS availability zone to deploy into (e.g. a, b, c, etc.). | `string` | `"a"` | no |
 | aws\_region | The AWS region to deploy into (e.g. us-east-1). | `string` | `"us-east-1"` | no |
@@ -68,7 +71,7 @@ No modules.
 ## Outputs ##
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | arn | The EC2 instance ARN. |
 | availability\_zone | The AZ where the EC2 instance is deployed. |
 | id | The EC2 instance ID. |
