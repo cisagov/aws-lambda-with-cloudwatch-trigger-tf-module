@@ -21,7 +21,7 @@ more details on Terraform modules and the standard module structure.
 
 ```hcl
 module "example" {
-  source = "github.com/cisagov/aws-lambda-with-cloudwatch-trigger-tf-module"
+  source = "github.com/cisagov/aws-lambda-with-cloudwatch-trigger-tf-module?ref=v1.0.0"
 
   aws_region            = "us-west-1"
   aws_availability_zone = "b"
